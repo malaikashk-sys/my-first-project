@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RoundedButton" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+    </style>
+
+    <!-- Big Button Style (Patient Screens) -->
+    <style name="BigButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_rounded</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <!-- Patient Button - Blue -->
+    <style name="BigButton.Patient">
+        <item name="android:backgroundTint">@color/btn_patient</item>
+    </style>
+
+    <!-- Caregiver Button - Green -->
+    <style name="BigButton.Caregiver">
+        <item name="android:backgroundTint">@color/btn_caregiver</item>
+    </style>
+
+    <!-- Emergency Button - Red -->
+    <style name="BigButton.Emergency">
+        <item name="android:backgroundTint">@color/btn_emergency</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <!-- Language Button - Small -->
+    <style name="SmallButtonLanguage">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:background">@drawable/btn_rounded</item>
+        <item name="android:backgroundTint">@color/btn_language</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Title Text Style -->
+    <style name="TitleText">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!-- Subtitle Text Style -->
+    <style name="SubtitleText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">32dp</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="ModuleCard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">6dp</item>
+        <item name="android:backgroundTint">@color/surface_card</item>
+    </style>
+
+    <style name="ReportDateText" parent="TitleText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="ReportEntryText" parent="SubtitleText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+
+</resources>

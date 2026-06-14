@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo1"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register as a Caregiver"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary"
+            android:fontFamily="@font/nunito_regular"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Full Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:hint="Enter your full name"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            android:padding="14dp"
+            android:background="@drawable/input_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            android:padding="14dp"
+            android:background="@drawable/input_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:hint="Min 6 characters"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:padding="14dp"
+            android:background="@drawable/input_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Confirm Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:hint="Re-enter password"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:padding="14dp"
+            android:background="@drawable/input_background"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Register Button -->
+        <Button
+    style="@style/RoundedButton"
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="Create Account"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:fontFamily="@font/nunito_bold"
+            android:background="@drawable/btn_rounded"
+            android:backgroundTint="@color/success"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Login Link -->
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have account? Login here"
+            android:textSize="16sp"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Back Button -->
+        <Button
+    style="@style/RoundedButton"
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="← Back"
+            android:textSize="18sp"
+            android:textColor="@color/text_white"
+            android:fontFamily="@font/nunito_bold"
+            android:background="@drawable/btn_rounded"
+            android:backgroundTint="@color/text_secondary" />
+
+    </LinearLayout>
+</ScrollView>

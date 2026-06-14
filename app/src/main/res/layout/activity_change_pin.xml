@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/background">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change PIN"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/txtSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your current PIN and set a new one"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:fontFamily="@font/nunito_regular"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Current PIN -->
+    <EditText
+        android:id="@+id/etCurrentPin"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:hint="Current PIN"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- New PIN -->
+    <EditText
+        android:id="@+id/etNewPin"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:hint="New PIN (4 digits)"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Confirm PIN -->
+    <EditText
+        android:id="@+id/etConfirmPin"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:hint="Confirm New PIN"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Change PIN Button -->
+    <Button
+    style="@style/RoundedButton"
+        android:id="@+id/btnChangePin"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="🔑 Change PIN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_white"
+        android:fontFamily="@font/nunito_bold"
+        android:background="@drawable/btn_rounded"
+        android:backgroundTint="@color/success"
+        android:layout_marginBottom="14dp" />
+
+    <!-- Back Button -->
+    <Button
+    style="@style/RoundedButton"
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="← Back"
+        android:textSize="18sp"
+        android:textColor="@color/text_white"
+        android:fontFamily="@font/nunito_bold"
+        android:background="@drawable/btn_rounded"
+        android:backgroundTint="@color/text_secondary" />
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Reminder"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="30sp"
+            android:textColor="#1A1A2E"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Main Form Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#EDF6F7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Specific Date Switch -->
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchSpecificDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Specific Date Mode"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="16sp"
+                    android:textColor="#1A1A2E"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Date Picker (hidden by default) -->
+                <LinearLayout
+                    android:id="@+id/layoutDatePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginBottom="16dp">
+
+                    <Button
+                        android:id="@+id/btnPickDate"
+                        style="@style/RoundedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="📅  Select Date"
+                        android:fontFamily="@font/nunito_bold"
+                        android:textSize="16sp"
+                        android:backgroundTint="#2E7D8C"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:id="@+id/txtSelectedDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="12dp"
+                        android:paddingTop="6dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:textColor="#1A1A2E"
+                        android:textSize="14sp"
+                        android:text="No date selected"/>
+
+                </LinearLayout>
+
+                <!-- English Title Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="English Title"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="14sp"
+                    android:textColor="#1A1A2E"
+                    android:layout_marginBottom="4dp"/>
+
+                <!-- English Title EditText -->
+                <EditText
+                    android:id="@+id/etReminderTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="e.g. Medicine Time"
+                    android:textColorHint="#888888"
+                    android:textColor="#1A1A2E"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="16sp"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:layout_marginBottom="14dp"/>
+
+                <!-- Urdu Title Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="اردو عنوان"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="14sp"
+                    android:textColor="#1A1A2E"
+                    android:gravity="end"
+                    android:layout_marginBottom="4dp"/>
+
+                <!-- Urdu Title EditText -->
+                <EditText
+                    android:id="@+id/etReminderTitleUrdu"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="مثلاً دوائی کا وقت"
+                    android:textColorHint="#888888"
+                    android:textColor="#1A1A2E"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Time Picker Button -->
+                <Button
+                    android:id="@+id/btnPickTime"
+                    style="@style/RoundedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="⏰  Set Alarm Time"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="16sp"
+                    android:backgroundTint="#2E7D8C"
+                    android:textColor="#FFFFFF"/>
+
+                <!-- Selected Time Display -->
+                <TextView
+                    android:id="@+id/txtSelectedTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="09:00 AM"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="36sp"
+                    android:textColor="#2E7D8C"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveReminder"
+            style="@style/RoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="Save Reminder"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="20sp"
+            android:backgroundTint="#2E7D8C"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Cancel -->
+        <Button
+            android:id="@+id/btnCancelReminder"
+            style="@style/RoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Cancel"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="17sp"
+            android:backgroundTint="#546E7A"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

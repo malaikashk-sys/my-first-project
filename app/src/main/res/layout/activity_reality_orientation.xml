@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtExerciseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reality Orientation"
+            style="@style/TitleText"
+            android:textSize="34sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reality Orientation Exercise"
+            style="@style/SubtitleText"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:id="@+id/infoCardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/surface"
+            android:gravity="center"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/txtTodayLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SubtitleText"
+                android:text="Today is:"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TitleText"
+                android:text="Monday, February 24, 2026"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/txtTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SubtitleText"
+                android:text="Current Time:"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TitleText"
+                android:text="10:30 AM"
+                android:textSize="40sp"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/txtLocationLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SubtitleText"
+                android:text="You are at:"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TitleText"
+                android:text="Faisalabad, Pakistan"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/txtSeason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TitleText"
+                android:text="☀️ Season: Summer"
+                android:textSize="18sp"
+                android:textColor="@color/warning"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SubtitleText"
+                android:fontFamily="@font/nunito_regular"
+                android:text="🌤 Loading weather..."
+                android:textColor="@color/primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quizCardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/surface"
+            android:gravity="center"
+            android:elevation="4dp"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/quizLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TitleText"
+                android:text="🧩 Quick Quiz"
+                android:textSize="24sp"
+                android:textColor="#7B1FA2"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/txtQuizQuestion"
+                style="@style/TitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What day is today?"
+                android:textSize="22sp"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutQuizOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnQuiz1"
+                    style="@style/BigButton.Patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Option 1"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnQuiz2"
+                    style="@style/BigButton.Patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Option 2"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnQuiz3"
+                    style="@style/BigButton.Patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Option 3"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtQuizResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TitleText"
+                android:text=""
+                android:textSize="22sp"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/btnNextQuiz"
+                style="@style/RoundedButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:backgroundTint="#7B1FA2"
+                android:visibility="gone"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/RoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="← Back"
+            android:backgroundTint="@color/text_secondary"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

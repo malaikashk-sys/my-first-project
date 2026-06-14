@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Family Member"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D8C"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Name (English) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name (English) *"
+            android:textSize="14sp"
+            android:textColor="#1A1A2E"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etMemberName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="e.g. Ahmed"
+            android:textColorHint="#888888"
+            android:textColor="#1A1A2E"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Relation (English) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relation (English)"
+            android:textSize="14sp"
+            android:textColor="#1A1A2E"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etMemberRelation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="e.g. Son"
+            android:textColorHint="#888888"
+            android:textColor="#1A1A2E"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Name (Urdu) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نام (اردو)"
+            android:textSize="14sp"
+            android:textColor="#1A1A2E"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etMemberNameUrdu"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="مثلاً احمد"
+            android:textColorHint="#888888"
+            android:textColor="#1A1A2E"
+            android:textSize="16sp"
+            android:gravity="end"
+            android:background="@drawable/rounded_edittext"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Relation (Urdu) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رشتہ (اردو)"
+            android:textSize="14sp"
+            android:textColor="#1A1A2E"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etMemberRelationUrdu"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="مثلاً بیٹا"
+            android:textColorHint="#888888"
+            android:textColor="#1A1A2E"
+            android:textSize="16sp"
+            android:gravity="end"
+            android:background="@drawable/rounded_edittext"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- 3 Photo Slots Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📸 Add 3 Photos for best recognition"
+            android:textSize="15sp"
+            android:textColor="#2E7D8C"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Progress label -->
+        <TextView
+            android:id="@+id/txtPhotoProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0/3 photos selected"
+            android:textSize="13sp"
+            android:textColor="#444444"
+            android:gravity="center"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- 3 Photo Slots Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="24dp">
+
+            <!-- Slot 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="6dp">
+                <ImageView
+                    android:id="@+id/imgSlot1"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:background="#C8C8C8"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:padding="8dp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/lblSlot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📷 Photo 1"
+                    android:textSize="12sp"
+                    android:textColor="#1A1A2E"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- Slot 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp">
+                <ImageView
+                    android:id="@+id/imgSlot2"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:background="#C8C8C8"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:padding="8dp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/lblSlot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📷 Photo 2"
+                    android:textSize="12sp"
+                    android:textColor="#1A1A2E"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- Slot 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="6dp">
+                <ImageView
+                    android:id="@+id/imgSlot3"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:background="#C8C8C8"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:padding="8dp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/lblSlot3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📷 Photo 3"
+                    android:textSize="12sp"
+                    android:textColor="#1A1A2E"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <Button
+            style="@style/RoundedButton"
+            android:id="@+id/btnSaveMember"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="💾 Save"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"
+            android:enabled="false"
+            android:alpha="0.5"/>
+
+        <!-- Cancel Button -->
+        <Button
+            style="@style/RoundedButton"
+            android:id="@+id/btnCancelMember"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Cancel"
+            android:textSize="16sp"
+            android:backgroundTint="#AAAAAA"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Location"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="32sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Location Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/surface">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txtLocationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📍 Last Known Address"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Press button to get location"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="19sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/txtLastUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Get Location Button -->
+        <Button
+            android:id="@+id/btnGetLocation"
+            style="@style/RoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="📍  Get Patient Location"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/btn_patient"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Open Maps Button -->
+        <Button
+            android:id="@+id/btnOpenMaps"
+            style="@style/RoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="🗺️  Open in Google Maps"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/success"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/RoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="← Back"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="18sp"
+            android:backgroundTint="@color/text_secondary"/>
+
+    </LinearLayout>
+</ScrollView>

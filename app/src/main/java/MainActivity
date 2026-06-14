@@ -1,0 +1,39 @@
+package com.example.dementiavirtualapp
+
+import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val btnFamily = findViewById<Button
+    style="@style/RoundedButton">(R.id.btnFamily)
+        val btnReminders = findViewById<Button
+    style="@style/RoundedButton">(R.id.btnReminders)
+        val btnExercise = findViewById<Button
+    style="@style/RoundedButton">(R.id.btnExercise)
+        val btnEmergency = findViewById<Button
+    style="@style/RoundedButton">(R.id.btnEmergency)
+
+        btnFamily.setOnClickListener {
+            Toast.makeText(this, "Opening Family Photos", Toast.LENGTH_SHORT).show()
+        }
+
+        btnReminders.setOnClickListener {
+            Toast.makeText(this, "Opening Reminders", Toast.LENGTH_SHORT).show()
+        }
+
+        btnExercise.setOnClickListener {
+            Toast.makeText(this, "Opening Exercise", Toast.LENGTH_SHORT).show()
+        }
+
+        btnEmergency.setOnClickListener {
+            Toast.makeText(this, "EMERGENCY!", Toast.LENGTH_SHORT).show()
+        }
+    }
+}

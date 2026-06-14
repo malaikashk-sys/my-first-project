@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contact"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="30sp"
+            android:textColor="#1A1A2E"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This number receives SMS and call when patient presses emergency button"
+            android:fontFamily="@font/nunito_regular"
+            android:textSize="15sp"
+            android:textColor="#3A3A3A"
+            android:gravity="center"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Current Number Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#EAFAFC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txtCurrentLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Emergency Number:"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="15sp"
+                    android:textColor="#2C2C2C"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/txtCurrentNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not set yet"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="26sp"
+                    android:textColor="#D32F2F"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Phone Input Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#EDF6F7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter New Number"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="14sp"
+                    android:textColor="#1A1A2E"
+                    android:layout_marginBottom="4dp"/>
+
+                <!-- Phone EditText -->
+                <EditText
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="e.g. 03001234567"
+                    android:textColorHint="#888888"
+                    android:textColor="#1A1A2E"
+                    android:inputType="phone"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveNumber"
+            style="@style/RoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="💾  Save Number"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="20sp"
+            android:backgroundTint="#388E3C"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/RoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="← Back"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="18sp"
+            android:backgroundTint="#546E7A"/>
+
+    </LinearLayout>
+</ScrollView>

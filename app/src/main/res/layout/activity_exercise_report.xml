@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise Report"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="30sp"
+            android:textColor="@color/text_primary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last 7 Days"
+            android:fontFamily="@font/nunito_regular"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+    <!-- Report list -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <LinearLayout
+            android:id="@+id/reportContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp"/>
+
+    </ScrollView>
+
+    <!-- Back button fixed at bottom -->
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/RoundedButton"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="← Back"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="18sp"
+        android:backgroundTint="@color/text_secondary"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>

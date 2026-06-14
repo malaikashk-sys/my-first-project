@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👤 Name &amp; Face"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="28sp"
+            android:textColor="@color/primary"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/txtInstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Who is this person?"
+            android:fontFamily="@font/nunito_regular"
+            android:textSize="17sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Face Image -->
+        <androidx.cardview.widget.CardView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="110dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/imgFace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@color/surface"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Answer options -->
+        <Button
+            android:id="@+id/btnOption1"
+            style="@style/BigButton.Patient"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnOption2"
+            style="@style/BigButton.Patient"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnOption3"
+            style="@style/BigButton.Patient"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Result -->
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Next / Back buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/RoundedButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="72dp"
+                android:text="Next ➡️"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="18sp"
+                android:backgroundTint="@color/primary"
+                android:visibility="gone"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/btnBack"
+                style="@style/RoundedButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="72dp"
+                android:text="🏠 Home"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="18sp"
+                android:backgroundTint="@color/text_secondary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

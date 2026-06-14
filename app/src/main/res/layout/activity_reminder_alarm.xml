@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/primary"
+    android:padding="24dp">
+
+    <!-- Bell Icon Circle -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="70dp"
+        app:cardBackgroundColor="#26FFFFFF"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_notifications"
+            app:tint="#FFFFFF"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- REMINDER label -->
+    <TextView
+        android:id="@+id/txtAlarmLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REMINDER"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="#99FFFFFF"
+        android:letterSpacing="0.2"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Reminder Title -->
+    <TextView
+        android:id="@+id/txtReminderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Medicine"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="42sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/txtReminderDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="09:00 AM"
+        android:fontFamily="@font/nunito_regular"
+        android:textSize="22sp"
+        android:textColor="#99FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="56dp"/>
+
+    <!-- Got it Button -->
+    <Button
+        android:id="@+id/btnDismiss"
+        style="@style/RoundedButton"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="✅  Okay, Got it!"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="26sp"
+        android:backgroundTint="#43A047"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Snooze Button -->
+    <Button
+        android:id="@+id/btnSnooze"
+        style="@style/RoundedButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="⏱  Remind me in 2 minutes"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="18sp"
+        android:backgroundTint="#26FFFFFF"
+        android:textColor="#FFB74D"/>
+
+</LinearLayout>

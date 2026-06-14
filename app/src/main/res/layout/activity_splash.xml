@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a5f6e">
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-80dp"
+        android:background="@drawable/circle_outline_faint" />
+
+    <View
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="-50dp"
+        android:background="@drawable/circle_outline_faint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/circle_teal_ring"
+            android:layout_marginBottom="28dp">
+
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="44dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo1"
+                    android:scaleType="fitCenter" />
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dementia\nAssistance"
+            android:textSize="30sp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.15"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For Alzheimer's Memory Loss"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="14sp"
+            android:textColor="#A8D8DF"
+            android:gravity="center"
+            android:layout_marginBottom="52dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="4dp"
+                android:background="@drawable/dot_active"
+                android:layout_marginEnd="6dp" />
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="4dp"
+                android:background="@drawable/dot_inactive"
+                android:layout_marginEnd="6dp" />
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="4dp"
+                android:background="@drawable/dot_inactive" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
