@@ -1,20 +1,18 @@
 # Alzheimer's Virtual Assistant
 
-Ek Android-based mobile application jo Alzheimer’s patients ko rozmarra ke kaam yaad rakhne mein aur caregiver se connected rehne mein madad karti hai.
+An Android-based mobile application designed to assist Alzheimer's patients in managing daily routines and staying connected with their caregivers.
 
  🚀 Features
-Real-time Reminders: Patients ke liye voice-based aur visual reminders.
-Caregiver Connectivity: Caregiver app ke zariye patient ki routine ko monitor karna.
-Emergency SOS: Ek button se caregiver ko emergency alerts bhejna.
-User-Centric UI: Seniors ke liye aasaan aur saaf interface.
+Real-time Reminders: Voice-based and visual reminders to help patients with daily tasks.
+Caregiver Connectivity: Allows caregivers to monitor the patient's routine through a dedicated app.
+Emergency SOS: A one-touch button to send emergency alerts to caregivers.
+User-Centric UI: Simple, clean, and accessible interface specifically designed for seniors.
+Bilingual Support:Supports multiple languages for better accessibility.
 
  🛠 Tech Stack
-Languages: XML / Kotlin
-Tools:Android Studio, Firebase (Real-time Database)
-
-📸 Screenshots
-(Yahan apni app ke screenshots upload karein)
+Languages: XML, Kotlin
+Tools: Android Studio, Firebase (Real-time Database)
 
 👤 Contact
-Developer:Malaika Farooq
-LinkedIn:[Click here to connect with me!](https://www.linkedin.com/in/malika-mano-a7b4ab416)
+Developer: Malaika Farooq
+LinkedIn: [Click here to connect with me!](https://www.linkedin.com/in/malika-mano-a7b4ab416)
